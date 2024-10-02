@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access </title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        dl {
+            margin: 0;
+            padding: 0;
+        }
+        dt {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        dd {
+            margin: 0;
+            padding: 0 0 10px 0;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+    </style> -->
+</head>
+<body>
+    <header>
+        <h1>Access </h1>
+        <p>Welcome to the premier event of the year!</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Event Schedule</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Speaker</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>09:00 AM - 10:00 AM</td>
+                        <td>Opening Keynote</td>
+                        <td>Mr.Syed Ameen Murtaza</td>
+                    </tr>
+                    <tr>
+                        <td>10:15 AM - 11:15 AM</td>
+                        <td>Innovations in Technology</td>
+                        <td>Mr.Tajamul Pasha</td>
+                    </tr>
+                    <tr>
+                        <td>11:30 AM - 12:30 PM</td>
+                        <td>Future of Full Stack Developert</td>
+                        <td>Mr.Salman khan</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Speakers</h2>
+            <dl>
+                <dt>Mr.Syed Ameen Murtazan</dt>
+                <dd>Educator. Expert in UX/UI Designer.</dd>
+
+                <dt>Mr.Tajamul Pash</dt>
+                <dd>Educator. Expert in Full Stack Developer.</dd>
+
+                <dt>Mr.Salman Khan</dt>
+                <dd>Educator. Expert in Full Stack Developer.</dd>
+
+                
+            </dl>
+        </section>
+
+        <section>
+            <h2>Registration</h2>
+            <table border="1">
+            <form action="submit_registration.html" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"><br>
+
+                <label for="affiliation">Company/Organization:</label>
+                <input type="text" id="affiliation" name="affiliation"><br>
+                <label for="sessions">Select Sessions to Attend:</label><br>
+                <input type="radio" name="prog1" id="prog1" value="Opening Keynote">
+                <label for="prog1">Opening Keynote</label><br>
+                <input type="radio" name="prog1" id="prog1" value="Opening Keynote">
+                <label for="prog1">Opening Keynote</label><br>
+                <input type="radio" name="prog1" id="prog1" value="Opening Keynote">
+                <label for="prog1">Opening Keynote</label><br>
+
+
+                <!-- <label for="sessions">Select Sessions to Attend:</label>
+                <input type="radio" id="sessions" name="sessions" multiple>
+                    <option value="opening_keynote">Opening Keynote</option>
+                    <option value="tech_innovations">Innovations in Technology</option>
+                    <option value="future_ai">Future of AI</option><br> -->
+                    
+                
+
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea><br>
+
+                <button type="submit">Register</button>
+            </form>
+        </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Access. All rights reserved.</p>
+    </footer>
+</body>
+</html>
